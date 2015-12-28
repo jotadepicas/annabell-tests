@@ -1,2 +1,2 @@
 # annabell-tests
-Unit Tests for Annabell project
+Unit Tests for [Annabell](https://github.com/golosio/annabell) project.
