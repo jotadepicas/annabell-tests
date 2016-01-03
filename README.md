@@ -11,4 +11,7 @@ Once you have installed Google Test, all you need to build this tests is:
 * Make sure you include Google Test libraries (gtest and pthread) in your build settings 
 * Make sure Annabell is on your build path (so you can include, for example, Annabell.h from a test and invoke Annabell's methods).
 
-Note: at the momment, annabell's design is not very unit-testable. I'm currently contributing to annabell trying to refactor it into more decoupled modules. My intention is to write this tests as I progress. 
+As a quick reference, for linux using g++ you could build it like this:
+
+    g++ -I path/to/annabell/src/ -o annabell-test ParseCommandTests.cpp -lgtest -lpthread
+
