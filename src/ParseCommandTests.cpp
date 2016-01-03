@@ -13,6 +13,14 @@ TEST(CommandUtilsTests, articleTest) {
 	EXPECT_EQ("shouldNotChange", CommandUtils::processArticle("shouldNotChange"));
 }
 
+TEST(CommandUtilsTests, stringUtilsTest) {
+	EXPECT_TRUE(CommandUtils::startsWith("abcdef", 'a'));
+	EXPECT_FALSE(CommandUtils::startsWith("abcdef", 'f'));
+
+	EXPECT_TRUE(CommandUtils::endsWith("abcdef", 'f'));
+	EXPECT_FALSE(CommandUtils::endsWith("abcdef", 'a'));
+}
+
 int main(int argc, char **argv) {
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
